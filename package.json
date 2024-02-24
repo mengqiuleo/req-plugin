@@ -1,0 +1,19 @@
+{
+  "name": "req-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db": "pnpm run -C playground db",
+    "dev": "pnpm run -C playground dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.6.7",
+    "jest": "^29.7.0",
+    "json-server": "1.0.0-alpha.23",
+    "rollup": "^4.12.0"
+  }
+}
