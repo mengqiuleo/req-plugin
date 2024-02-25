@@ -38,7 +38,9 @@ importers:
         specifier: ^4.12.0
         version: 4.12.0
 
-  packages/cachePlugin:
+  packages/core: {}
+
+  packages/fetch-cache:
     dependencies:
       '@req-plugin/core':
         specifier: workspace:^
@@ -47,9 +49,7 @@ importers:
         specifier: ^10.2.0
         version: 10.2.0
 
-  packages/core: {}
-
-  packages/retryPlugin:
+  packages/fetch-retry:
     dependencies:
       '@req-plugin/core':
         specifier: workspace:^
@@ -62,10 +62,10 @@ importers:
         version: link:../packages/core
       '@req-plugin/fetch-cache':
         specifier: workspace:^
-        version: link:../packages/cachePlugin
+        version: link:../packages/fetch-cache
       '@req-plugin/fetch-retry':
         specifier: workspace:^
-        version: link:../packages/retryPlugin
+        version: link:../packages/fetch-retry
       axios:
         specifier: ^1.6.7
         version: 1.6.7
