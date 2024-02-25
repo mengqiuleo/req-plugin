@@ -12,7 +12,6 @@
     "test": "jest",
     "change": "changeset add",
     "change:version": "changeset version",
-    "prepublishOnly": "npm run build",
     "release": "pnpm build && pnpm release:only",
     "release:only": "changeset publish"
   },
