@@ -15,34 +15,10 @@ export async function dispatchRequest(config) {
 
   try {
       const response = await fetch(url, config)
-      // 读取 response（目前支持 josn 和 text，其他类型请自行指定 readMethod）
-      const contentType = response.headers.get('Content-Type') ?? ''
-
-      // let body = response
-      // if(response.ok){
-      //   body = await response.json()
-      // }
-      // let body = await response.json()
-
-      // if (contentType.includes('application/json')) {
-      //     body = await response.json()
-      // } else if (/text\/(html|plain)/.test(contentType)) {
-      //     body = await response.text()
-      // } else {
-      //     if (!readMethod) {
-      //         console.error(
-      //             'Warning: `readMethod` is not specified, response will be read by `json`.'
-      //         );
-      //     }
-      //     body = await response[readMethod ?? 'json']()
-      // }
 
       // 处理成功响应
       if (response.ok) return response
 
-      // 处理失败响应（非网络故障或被阻止的请求，视为 error）
-      const { status, statusText } = response;
-      // throw new Error(response)
       return Promise.reject(response)
   } catch (error) {
       return Promise.reject(error)

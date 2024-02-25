@@ -10,6 +10,9 @@
     "db": "json-server --watch db.json"
   },
   "dependencies": {
+    "@req-plugin/core": "workspace:^",
+    "@req-plugin/fetch-cache": "workspace:^",
+    "@req-plugin/fetch-retry": "workspace:^",
     "axios": "^1.6.7",
     "vue": "^3.4.19"
   },

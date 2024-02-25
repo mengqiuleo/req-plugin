@@ -1,4 +1,4 @@
-import { Plugin } from '../../core/pluginify/core'
+import { Plugin } from '@req-plugin/core'
 
 export class retryPlugin extends Plugin {
   constructor(retryConfig = { retryTimes: 3, retryDelay: 300}){

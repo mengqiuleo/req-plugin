@@ -1,14 +1,14 @@
-import axios from 'axios'
 import { Core } from './core.js'
 
 export class AxiosPluginify extends Core {
-  constructor(config) {
+  constructor(axiosStatic, config = {}) {
     super()
+    this.axiosStatic = axiosStatic
     this.config = config
   }
 
   generate() {
-    const axiosInstance = axios.create(this.config)
+    const axiosInstance = this.axiosStatic.create(this.config)
 
     for (const plugin of this.created) {
       const { created: createdEffect, pluginName } = plugin
@@ -21,6 +21,6 @@ export class AxiosPluginify extends Core {
      
     }
 
-    return axios
+    return axiosInstance
   }
 }

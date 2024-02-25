@@ -1,16 +1,23 @@
 <script setup>
-import { pluginify } from '../../packages/core/index'
-import { retryPlugin } from '../../packages/core/plugin.js'
-import { cachePlugin } from '../../packages/cachePlugin/src/index.js'
+import { pluginify } from '@req-plugin/core'
+import { retryPlugin } from '@req-plugin/fetch-retry'
+import { cachePlugin } from '@req-plugin/fetch-cache'
+import axios from 'axios'
 
+const axiosInstance = pluginify(axios)
+                        .use()
+                        .generate()
 
-const fetchInstance = pluginify('fetch')
+axiosInstance.get('http://localhost:3000/posts')
+  .then(res => console.log('axios res', res))
+
+const fetchInstance = pluginify()
                         .use(new retryPlugin(), new cachePlugin())
                         .generate()
 
-// fetchInstance.fetch('http://localhost:3000/fsadf', { retryTimes: 3, retryDelay: 300})
-//   .then(res => console.log(res))
-//   .catch(err => console.error('Request Failed', err));
+fetchInstance.fetch('http://localhost:3000/fsadf', { retryTimes: 3, retryDelay: 300})
+  .then(res => console.log(res))
+  .catch(err => console.error('Request Failed', err));
 
 fetchInstance.fetch('http://localhost:3000/posts', {
   useCache: true

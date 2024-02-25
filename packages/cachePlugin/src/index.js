@@ -1,4 +1,4 @@
-import { Plugin } from '../../core/pluginify/core'
+import { Plugin } from '@req-plugin/core'
 import { LRUCache } from 'lru-cache'
 
 export class cachePlugin extends Plugin {
