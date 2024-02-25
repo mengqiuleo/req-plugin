@@ -1,5 +1,4 @@
-# @req-plugin
-
+# @req-plugin/core
 `@req-plugin/core`是`@req-plugin`的核心，它可以让 `axios`、`fetch` 成为基于插件的请求库，该 npm 包提供了一种维护请求、响应拦截器的方式。
 
 ## 特性
@@ -36,7 +35,7 @@ const res2 = await axiosInstance2.get('/info')
 
 ## fetch 使用
 
-`fetch` 这个 API 原生是不支持拦截器的，`@req-plugin/core` 内部参考 `axios` 拦截器的实现，对 `fetch` 增加了拦截器功能，并将 response 做 json 格式化处理。
+`fetch` 这个 API 原生是不支持拦截器的，`@axios-plugin/core` 内部参考 `axios` 拦截器的实现，对 `fetch` 增加了拦截器功能，并将 response 做 json 格式化处理。
 
 pluginify 在调用 generate API 之后会返回一个 fetch 请求的实例，发起请求时需要调用这个实例上的 fetch 方法，参数与原来的方法参数一致。
 

@@ -1,7 +1,7 @@
 {
   "name": "@req-plugin/fetch-cache",
   "version": "1.0.0",
-  "description": "",
+  "description": "@req-plugin的插件，将请求结果存储在可配置的存储中",
   "main": "src/index.js",
   "module": "src/index.js",
   "publishConfig": {
@@ -13,11 +13,23 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "fetch",
+    "fetch-plugin",
+    "request"
+  ],
   "dependencies": {
     "@req-plugin/core": "workspace:^",
     "lru-cache": "^10.2.0"
-  }
+  },
+  "author": "mengqiuleo",
+  "homepage": "https://github.com/mengqiuleo/req-plugin#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengqiuleo/req-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mengqiuleo/req-plugin/issues"
+  },
+  "license": "MIT"
 }

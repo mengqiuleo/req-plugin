@@ -1,7 +1,7 @@
 {
   "name": "@req-plugin/core",
   "version": "1.0.0",
-  "description": "",
+  "description": "@req-plugin/core 是 @req-plugin 的核心，它可以让 axios、fetch 成为基于插件的请求库",
   "type": "module",
   "main": "src/index.js",
   "module": "src/index.js",
@@ -13,7 +13,21 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "axios",
+    "fetch",
+    "fetch-plugin",
+    "axios-plugin",
+    "request"
+  ],
+  "author": "mengqiuleo",
+  "homepage": "https://github.com/mengqiuleo/req-plugin#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengqiuleo/req-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mengqiuleo/req-plugin/issues"
+  },
+  "license": "MIT"
 }

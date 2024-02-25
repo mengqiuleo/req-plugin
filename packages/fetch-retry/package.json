@@ -1,7 +1,7 @@
 {
   "name": "@req-plugin/fetch-retry",
   "version": "1.0.0",
-  "description": "",
+  "description": "@req-plugin的插件，拦截失败的请求并在可能的情况下进行重试",
   "type": "module",
   "main": "src/index.js",
   "module": "src/index.js",
@@ -13,10 +13,22 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "fetch",
+    "fetch-plugin",
+    "request"
+  ],
   "dependencies": {
     "@req-plugin/core": "workspace:^"
-  }
+  },
+  "author": "mengqiuleo",
+  "homepage": "https://github.com/mengqiuleo/req-plugin#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengqiuleo/req-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mengqiuleo/req-plugin/issues"
+  },
+  "license": "MIT"
 }

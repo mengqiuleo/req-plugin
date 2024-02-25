@@ -8,12 +8,18 @@
   "scripts": {
     "db": "pnpm run -C playground db",
     "dev": "pnpm run -C playground dev",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "test": "jest",
+    "change": "changeset add",
+    "change:version": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "13.0.6",
     "axios": "^1.6.7",
