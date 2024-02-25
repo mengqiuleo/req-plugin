@@ -1,6 +1,11 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
-  "changelog": ["@changesets/changelog-github", {"repo": "mengqiuleo/req-plugin"}],
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "mengqiuleo/req-plugin"
+    }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],

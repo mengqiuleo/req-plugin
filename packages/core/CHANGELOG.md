@@ -1,5 +1,11 @@
 # @req-plugin/core
 
+## 1.1.2
+
+### Patch Changes
+
+- fix changelog-github bug
+
 ## 1.1.1
 
 ### Patch Changes
