@@ -11,7 +11,7 @@ const axiosInstance = pluginify(axios)
 axiosInstance.get('http://localhost:3000/posts')
   .then(res => console.log('axios res', res))
 
-const fetchInstance = pluginify()
+const fetchInstance = pluginify(fetch)
                         .use(new retryPlugin(), new cachePlugin())
                         .generate()
 
