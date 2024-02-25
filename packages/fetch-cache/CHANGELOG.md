@@ -1,5 +1,14 @@
 # @req-plugin/fetch-cache
 
+## 1.1.5
+
+### Patch Changes
+
+- fix publish bug
+
+- Updated dependencies []:
+  - @req-plugin/core@1.1.5
+
 ## 1.1.4
 
 ### Patch Changes
