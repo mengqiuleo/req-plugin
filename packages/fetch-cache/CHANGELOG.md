@@ -1,5 +1,14 @@
 # @req-plugin/fetch-cache
 
+## 1.1.3
+
+### Patch Changes
+
+- 引入 changelog 工具
+
+- Updated dependencies []:
+  - @req-plugin/core@1.1.3
+
 ## 1.1.2
 
 ### Patch Changes

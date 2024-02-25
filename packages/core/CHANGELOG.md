@@ -1,5 +1,11 @@
 # @req-plugin/core
 
+## 1.1.3
+
+### Patch Changes
+
+- 引入 changelog 工具
+
 ## 1.1.2
 
 ### Patch Changes

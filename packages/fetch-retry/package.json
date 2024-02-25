@@ -1,6 +1,6 @@
 {
   "name": "@req-plugin/fetch-retry",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "@req-plugin的插件，拦截失败的请求并在可能的情况下进行重试",
   "type": "module",
   "main": "src/index.js",
