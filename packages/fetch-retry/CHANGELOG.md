@@ -1,5 +1,14 @@
 # @req-plugin/fetch-retry
 
+## 1.1.4
+
+### Patch Changes
+
+- fix changlog util
+
+- Updated dependencies []:
+  - @req-plugin/core@1.1.4
+
 ## 1.1.3
 
 ### Patch Changes

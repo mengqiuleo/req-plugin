@@ -1,5 +1,11 @@
 # @req-plugin/core
 
+## 1.1.4
+
+### Patch Changes
+
+- fix changlog util
+
 ## 1.1.3
 
 ### Patch Changes
