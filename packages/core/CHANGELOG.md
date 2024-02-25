@@ -1,5 +1,11 @@
 # @req-plugin/core
 
+## 1.2.0
+
+### Minor Changes
+
+- [`90878ba`](https://github.com/mengqiuleo/req-plugin/commit/90878ba8daac7ae06b359249260d92ee3cca760d) Thanks [@mengqiuleo](https://github.com/mengqiuleo)! - add github action
+
 ## 1.1.5
 
 ### Patch Changes
