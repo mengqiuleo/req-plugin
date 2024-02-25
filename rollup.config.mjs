@@ -1,5 +1,7 @@
 import json from '@rollup/plugin-json'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
+import { terser } from 'rollup-plugin-terser'
+import cleanup from 'rollup-plugin-cleanup'
 
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -33,7 +35,9 @@ const createConfig = (name) => {
     ],
     plugins: [
       json(),
-      nodeResolve()
+      nodeResolve(),
+      terser(),
+      cleanup()
     ]
   }
 }
