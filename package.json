@@ -1,7 +1,6 @@
 {
   "name": "req-plugin",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "",
   "main": "index.js",
@@ -12,8 +11,7 @@
     "test": "jest",
     "change": "changeset add",
     "change:version": "changeset version",
-    "release": "pnpm build && pnpm release:only",
-    "release:only": "changeset publish"
+    "release": "pnpm build && pnpm changeset publish"
   },
   "keywords": [],
   "author": "",
